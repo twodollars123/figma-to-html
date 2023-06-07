@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RecLand</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper header-wrapper">
+        <a href="/" class="logo">
+          <img src="./assets/images/logo.png" alt="logo" />
+        </a>
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link btn" title="Tất Cả Các Job"
+                >Tất Cả Các Job</a
+              >
+            </li>
+            <li class="header-nav__item">
+              <a
+                href="#"
+                class="header-nav__link btn btn--border"
+                title="Đăng ký"
+                >Đăng ký</a
+              >
+            </li>
+            <li class="header-nav__item">
+              <a
+                href="#"
+                class="header-nav__link btn btn--solid"
+                title="Đăng Nhập"
+                >Đăng Nhập</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="banner">
+      <img src="./assets/images/banner.png" alt="banner" />
+    </div>
+
+    <div class="wrapper">
+      <!-- form search layout -->
+      <div class="form-search-layout">
+        <form class="form-search">
+          <div class="form-search__input">
+            <div class="search-icon">
+              <svg
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 20.5126C15.9706 20.5126 20 16.4832 20 11.5126C20 6.54207 15.9706 2.51263 11 2.51263C6.02944 2.51263 2 6.54207 2 11.5126C2 16.4832 6.02944 20.5126 11 20.5126Z"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M18.9299 21.2024C19.4599 22.8024 20.6699 22.9624 21.5999 21.5624C22.4499 20.2824 21.8899 19.2324 20.3499 19.2324C19.2099 19.2224 18.5699 20.1124 18.9299 21.2024Z"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <input
+              type="text"
+              placeholder="Nhập vị trí hoặc từ khóa..."
+              id="search"
+            />
+          </div>
+          <div class="form-search__option">
+            <div class="search-icon--located">
+              <svg
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M14.5 11.0131C14.5 9.63187 13.3808 8.51263 12.0005 8.51263C10.6192 8.51263 9.5 9.63187 9.5 11.0131C9.5 12.3934 10.6192 13.5126 12.0005 13.5126C13.3808 13.5126 14.5 12.3934 14.5 11.0131Z"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11.9995 21.5126C10.801 21.5126 4.5 16.411 4.5 11.0759C4.5 6.89927 7.8571 3.51263 11.9995 3.51263C16.1419 3.51263 19.5 6.89927 19.5 11.0759C19.5 16.411 13.198 21.5126 11.9995 21.5126Z"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <select class="search__option--select">
+              <option value="1">Chọn địa chỉ</option>
+              <option value="1">Chọn địa chỉ</option>
+              <option value="1">Chọn địa chỉ</option>
+            </select>
+          </div>
+          <button class="btn btn--solid btn-search">Tìm kiếm</button>
+        </form>
+      </div>
+      <!--end form search layout -->
+
+      <!-- suggest list -->
+      <div class="suggest-wrap">
+        <span>Đề xuất:</span>
+        <ul class="suggest-list">
+          <li class="suggest-item">Reactjs</li>
+          <li class="suggest-item">VueJS</li>
+          <li class="suggest-item">Angular</li>
+          <li class="suggest-item">Design</li>
+          <li class="suggest-item">.NET</li>
+          <li class="suggest-item">PHP</li>
+          <li class="suggest-item">java</li>
+          <li class="suggest-item">Mobile</li>
+        </ul>
+      </div>
+      <!-- end suggest list -->
+
+      <!-- list job -->
+      <div class="job-wrap">
+        <div class="job-header">
+          <div class="job-heading-wrap">
+            <div class="job-heading__iconWrap">
+              <div class="job-heading__icon">
+                <img src="./assets/images/heartIcon.svg" alt="heart icon" />
+              </div>
+            </div>
+            <h2 class="job-heading__title">Jobs tốt nhất</h2>
+          </div>
+          <a href="#" class="job-header__link">Xem Tất Cả</a>
+        </div>
+        <!-- job card list -->
+        <ul class="job-card__list">
+          <li class="job-card__item">
+            <div class="job-card__header">
+              <div class="job-card__heading">
+                <img
+                  src="https://images.unsplash.com/photo-1549158307-2b9290a48035?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJtdyUyMGxvZ298ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                  alt=""
+                  class="job-card__heading--avatar"
+                />
+                <h4 class="job-card__heading--name">Data Engineer</h4>
+              </div>
+              <div class="job-card__time">Full-time</div>
+            </div>
+            <div class="job-card__body">
+              <div class="job-card__priceItem">
+                <span class="job-card__priceText">Hoa hồng</span>
+                <p class="job-card__priceNum">12,000,000 <span>VNĐ</span></p>
+              </div>
+              <div class="job-card__priceItem">
+                <span class="job-card__priceText">Thưởng</span>
+                <p class="job-card__priceNum">50,000,000 <span>VNĐ</span></p>
+              </div>
+            </div>
+            <div class="job-card__footer">
+              <div class="job-card__footerLeft">
+                <div class="job-card__tag">Hà Nội</div>
+                <div class="job-card__tag">Onboard</div>
+              </div>
+              <div class="job-card__footerRight">PREMIUM</div>
+            </div>
+          </li>
+
+          <li class="job-card__item">
+            <div class="job-card__header">
+              <div class="job-card__heading">
+                <img
+                  src="https://images.unsplash.com/photo-1549158307-2b9290a48035?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJtdyUyMGxvZ298ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                  alt=""
+                  class="job-card__heading--avatar"
+                />
+                <h4 class="job-card__heading--name">Data Engineer</h4>
+              </div>
+              <div class="job-card__time">Full-time</div>
+            </div>
+            <div class="job-card__body">
+              <div class="job-card__priceItem">
+                <span class="job-card__priceText">Hoa hồng</span>
+                <p class="job-card__priceNum">12,000,000 <span>VNĐ</span></p>
+              </div>
+              <div class="job-card__priceItem">
+                <span class="job-card__priceText">Thưởng</span>
+                <p class="job-card__priceNum">50,000,000 <span>VNĐ</span></p>
+              </div>
+            </div>
+            <div class="job-card__footer">
+              <div class="job-card__footerLeft">
+                <div class="job-card__tag">Hà Nội</div>
+                <div class="job-card__tag">Onboard</div>
+              </div>
+              <div class="job-card__footerRight">PREMIUM</div>
+            </div>
+          </li>
+
+          <li class="job-card__item">
+            <div class="job-card__header">
+              <div class="job-card__heading">
+                <img
+                  src="https://images.unsplash.com/photo-1549158307-2b9290a48035?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJtdyUyMGxvZ298ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                  alt=""
+                  class="job-card__heading--avatar"
+                />
+                <h4 class="job-card__heading--name">Data Engineer</h4>
+              </div>
+              <div class="job-card__time">Full-time</div>
+            </div>
+            <div class="job-card__body">
+              <div class="job-card__priceItem">
+                <span class="job-card__priceText">Hoa hồng</span>
+                <p class="job-card__priceNum">12,000,000 <span>VNĐ</span></p>
+              </div>
+              <div class="job-card__priceItem">
+                <span class="job-card__priceText">Thưởng</span>
+                <p class="job-card__priceNum">50,000,000 <span>VNĐ</span></p>
+              </div>
+            </div>
+            <div class="job-card__footer">
+              <div class="job-card__footerLeft">
+                <div class="job-card__tag">Hà Nội</div>
+                <div class="job-card__tag">Onboard</div>
+              </div>
+              <div class="job-card__footerRight">PREMIUM</div>
+            </div>
+          </li>
+
+          <li class="job-card__item">
+            <div class="job-card__header">
+              <div class="job-card__heading">
+                <img
+                  src="https://images.unsplash.com/photo-1549158307-2b9290a48035?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJtdyUyMGxvZ298ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                  alt=""
+                  class="job-card__heading--avatar"
+                />
+                <h4 class="job-card__heading--name">Data Engineer</h4>
+              </div>
+              <div class="job-card__time">Full-time</div>
+            </div>
+            <div class="job-card__body">
+              <div class="job-card__priceItem">
+                <span class="job-card__priceText">Hoa hồng</span>
+                <p class="job-card__priceNum">12,000,000 <span>VNĐ</span></p>
+              </div>
+              <div class="job-card__priceItem">
+                <span class="job-card__priceText">Thưởng</span>
+                <p class="job-card__priceNum">50,000,000 <span>VNĐ</span></p>
+              </div>
+            </div>
+            <div class="job-card__footer">
+              <div class="job-card__footerLeft">
+                <div class="job-card__tag">Hà Nội</div>
+                <div class="job-card__tag">Onboard</div>
+              </div>
+              <div class="job-card__footerRight">PREMIUM</div>
+            </div>
+          </li>
+
+          <li class="job-card__item">
+            <div class="job-card__header">
+              <div class="job-card__heading">
+                <img
+                  src="https://images.unsplash.com/photo-1549158307-2b9290a48035?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJtdyUyMGxvZ298ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                  alt=""
+                  class="job-card__heading--avatar"
+                />
+                <h4 class="job-card__heading--name">Data Engineer</h4>
+              </div>
+              <div class="job-card__time">Full-time</div>
+            </div>
+            <div class="job-card__body">
+              <div class="job-card__priceItem">
+                <span class="job-card__priceText">Hoa hồng</span>
+                <p class="job-card__priceNum">12,000,000 <span>VNĐ</span></p>
+              </div>
+              <div class="job-card__priceItem">
+                <span class="job-card__priceText">Thưởng</span>
+                <p class="job-card__priceNum">50,000,000 <span>VNĐ</span></p>
+              </div>
+            </div>
+            <div class="job-card__footer">
+              <div class="job-card__footerLeft">
+                <div class="job-card__tag">Hà Nội</div>
+                <div class="job-card__tag">Onboard</div>
+              </div>
+              <div class="job-card__footerRight">PREMIUM</div>
+            </div>
+          </li>
+
+          <li class="job-card__item">
+            <div class="job-card__header">
+              <div class="job-card__heading">
+                <img
+                  src="https://images.unsplash.com/photo-1549158307-2b9290a48035?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJtdyUyMGxvZ298ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                  alt=""
+                  class="job-card__heading--avatar"
+                />
+                <h4 class="job-card__heading--name">Data Engineer</h4>
+              </div>
+              <div class="job-card__time">Full-time</div>
+            </div>
+            <div class="job-card__body">
+              <div class="job-card__priceItem">
+                <span class="job-card__priceText">Hoa hồng</span>
+                <p class="job-card__priceNum">12,000,000 <span>VNĐ</span></p>
+              </div>
+              <div class="job-card__priceItem">
+                <span class="job-card__priceText">Thưởng</span>
+                <p class="job-card__priceNum">50,000,000 <span>VNĐ</span></p>
+              </div>
+            </div>
+            <div class="job-card__footer">
+              <div class="job-card__footerLeft">
+                <div class="job-card__tag">Hà Nội</div>
+                <div class="job-card__tag">Onboard</div>
+              </div>
+              <div class="job-card__footerRight">PREMIUM</div>
+            </div>
+          </li>
+
+          <li class="job-card__item">
+            <div class="job-card__header">
+              <div class="job-card__heading">
+                <img
+                  src="https://images.unsplash.com/photo-1549158307-2b9290a48035?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJtdyUyMGxvZ298ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                  alt=""
+                  class="job-card__heading--avatar"
+                />
+                <h4 class="job-card__heading--name">Data Engineer</h4>
+              </div>
+              <div class="job-card__time">Full-time</div>
+            </div>
+            <div class="job-card__body">
+              <div class="job-card__priceItem">
+                <span class="job-card__priceText">Hoa hồng</span>
+                <p class="job-card__priceNum">12,000,000 <span>VNĐ</span></p>
+              </div>
+              <div class="job-card__priceItem">
+                <span class="job-card__priceText">Thưởng</span>
+                <p class="job-card__priceNum">50,000,000 <span>VNĐ</span></p>
+              </div>
+            </div>
+            <div class="job-card__footer">
+              <div class="job-card__footerLeft">
+                <div class="job-card__tag">Hà Nội</div>
+                <div class="job-card__tag">Onboard</div>
+              </div>
+              <div class="job-card__footerRight">PREMIUM</div>
+            </div>
+          </li>
+
+          <li class="job-card__item">
+            <div class="job-card__header">
+              <div class="job-card__heading">
+                <img
+                  src="https://images.unsplash.com/photo-1549158307-2b9290a48035?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJtdyUyMGxvZ298ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                  alt=""
+                  class="job-card__heading--avatar"
+                />
+                <h4 class="job-card__heading--name">Data Engineer</h4>
+              </div>
+              <div class="job-card__time">Full-time</div>
+            </div>
+            <div class="job-card__body">
+              <div class="job-card__priceItem">
+                <span class="job-card__priceText">Hoa hồng</span>
+                <p class="job-card__priceNum">12,000,000 <span>VNĐ</span></p>
+              </div>
+              <div class="job-card__priceItem">
+                <span class="job-card__priceText">Thưởng</span>
+                <p class="job-card__priceNum">50,000,000 <span>VNĐ</span></p>
+              </div>
+            </div>
+            <div class="job-card__footer">
+              <div class="job-card__footerLeft">
+                <div class="job-card__tag">Hà Nội</div>
+                <div class="job-card__tag">Onboard</div>
+              </div>
+              <div class="job-card__footerRight">PREMIUM</div>
+            </div>
+          </li>
+
+          <li class="job-card__item">
+            <div class="job-card__header">
+              <div class="job-card__heading">
+                <img
+                  src="https://images.unsplash.com/photo-1549158307-2b9290a48035?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJtdyUyMGxvZ298ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                  alt=""
+                  class="job-card__heading--avatar"
+                />
+                <h4 class="job-card__heading--name">Data Engineer</h4>
+              </div>
+              <div class="job-card__time">Full-time</div>
+            </div>
+            <div class="job-card__body">
+              <div class="job-card__priceItem">
+                <span class="job-card__priceText">Hoa hồng</span>
+                <p class="job-card__priceNum">12,000,000 <span>VNĐ</span></p>
+              </div>
+              <div class="job-card__priceItem">
+                <span class="job-card__priceText">Thưởng</span>
+                <p class="job-card__priceNum">50,000,000 <span>VNĐ</span></p>
+              </div>
+            </div>
+            <div class="job-card__footer">
+              <div class="job-card__footerLeft">
+                <div class="job-card__tag">Hà Nội</div>
+                <div class="job-card__tag">Onboard</div>
+              </div>
+              <div class="job-card__footerRight">PREMIUM</div>
+            </div>
+          </li>
+        </ul>
+        <!--end job card list -->
+      </div>
+      <!-- end list job -->
+
+      <!-- introduction  -->
+      <div class="intro-wrap">
+        <div class="intro-header">
+          <span class="intro-heading--eng">Why?</span>
+          <span class="intro-heading--vie">Tại Sao Lựa Chọn Recland?</span>
+        </div>
+        <ul class="intro-body">
+          <li class="intro-card">
+            <svg
+              width="55"
+              height="54"
+              viewBox="0 0 55 54"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_3794_144)">
+                <path
+                  d="M54.6665 49.3606C54.49 49.9274 54.3886 50.5323 54.1244 51.0537C52.4609 54.3385 48.3835 54.9984 45.7604 52.4148C43.8306 50.5144 41.9135 48.6012 40.0185 46.6659C38.3867 44.9981 37.9587 43.0533 38.8084 40.8504C38.8613 40.714 38.8803 40.4718 38.801 40.3904C37.7135 39.2704 36.607 38.1695 35.4846 37.0442C30.0778 41.4543 23.9744 43.0459 17.1989 41.6203C12.0478 40.5363 7.869 37.7718 4.75445 33.5257C-1.56977 24.9013 -0.48649 12.8653 7.50228 5.4962C15.1634 -1.57147 27.1999 -1.84749 35.1718 4.81619C38.075 7.24329 40.2014 10.2341 41.5024 13.8044C42.8076 17.3895 43.1056 21.055 42.4419 24.8062C41.7814 28.5436 40.1813 31.8389 37.7326 34.7546C37.8224 34.8688 37.8879 34.9693 37.9703 35.0529C38.9501 36.0385 39.9245 37.0284 40.9221 37.995C41.0468 38.1155 41.3333 38.1991 41.4844 38.142C43.7281 37.2854 45.6917 37.72 47.3848 39.3962C49.2713 41.265 51.1324 43.1601 53.0221 45.0256C53.9479 45.9394 54.4319 47.054 54.6655 48.3051C54.6665 48.6562 54.6665 49.0084 54.6665 49.3606ZM36.0088 21.0434C36.068 20.9471 36.1113 20.871 36.1589 20.797C37.9016 18.0864 36.2054 14.6282 33.001 14.4199C31.793 14.3416 30.5766 14.3691 29.3644 14.3934C28.4058 14.4125 27.7812 15.0523 27.778 16.0062C27.7654 19.365 27.7654 22.7249 27.778 26.0837C27.7823 27.0503 28.446 27.6996 29.413 27.7145C30.5206 27.7314 31.6282 27.7451 32.7347 27.7113C34.3263 27.6616 35.5808 26.9795 36.347 25.5517C37.1745 24.0077 36.9928 22.5081 36.0088 21.0434ZM16.661 21.0159C16.6959 21.019 16.7318 21.0222 16.7667 21.0254C16.7667 21.6938 16.7593 22.3621 16.7677 23.0305C16.7941 24.9384 17.6238 26.3629 19.3295 27.2481C21.9949 28.6324 25.5132 26.7997 25.7563 23.8057C25.9042 21.992 25.8789 20.1497 25.7626 18.3318C25.6347 16.3235 23.8634 14.6219 21.9336 14.4315C19.6307 14.2041 17.5783 15.4214 17.0351 17.5259C16.7455 18.6469 16.7751 19.8494 16.661 21.0159ZM11.6356 17.5069C11.6504 17.7797 11.6673 17.9511 11.6673 18.1224C11.6695 19.8092 11.6695 21.4971 11.6684 23.1839C11.6673 24.0616 11.3672 24.5058 10.7595 24.5418C10.193 24.5746 9.87069 24.1981 9.7259 23.334C9.60119 22.5906 8.9787 22.0428 8.23151 22.0184C7.46951 21.9941 6.80898 22.4721 6.65574 23.2198C6.59444 23.5191 6.62403 23.8459 6.65785 24.1558C6.87239 26.1546 8.73351 27.7599 10.769 27.7145C12.8658 27.6679 14.7153 26.0266 14.7766 23.9929C14.858 21.3067 14.8305 18.6163 14.8147 15.928C14.8094 15.0185 14.1858 14.4188 13.2716 14.3945C12.1313 14.3649 10.9888 14.3829 9.84744 14.3924C9.65932 14.3945 9.46168 14.4357 9.28413 14.5024C8.63417 14.7488 8.22833 15.4098 8.29175 16.0824C8.36256 16.8301 8.87724 17.4255 9.62338 17.4942C10.2691 17.5545 10.9212 17.5069 11.6356 17.5069Z"
+                  fill="#2ADA66"
+                />
+                <path
+                  d="M54.6665 49.3606C54.49 49.9274 54.3886 50.5323 54.1244 51.0537C52.4609 54.3385 48.3835 54.9984 45.7604 52.4148C43.8306 50.5144 41.9135 48.6012 40.0185 46.6659C38.3867 44.9981 37.9587 43.0533 38.8084 40.8504C38.8613 40.714 38.8803 40.4718 38.801 40.3904C37.7135 39.2704 36.607 38.1695 35.4846 37.0442C30.0778 41.4543 23.9744 43.0459 17.1989 41.6203C12.0478 40.5363 7.869 37.7718 4.75445 33.5257C-1.56977 24.9013 -0.48649 12.8653 7.50228 5.4962C15.1634 -1.57147 27.1999 -1.84749 35.1718 4.81619C38.075 7.24329 40.2014 10.2341 41.5024 13.8044C42.8076 17.3895 43.1056 21.055 42.4419 24.8062C41.7814 28.5436 40.1813 31.8389 37.7326 34.7546C37.8224 34.8688 37.8879 34.9693 37.9703 35.0529C38.9501 36.0385 39.9245 37.0284 40.9221 37.995C41.0468 38.1155 41.3333 38.1991 41.4844 38.142C43.7281 37.2854 45.6917 37.72 47.3848 39.3962C49.2713 41.265 51.1324 43.1601 53.0221 45.0256C53.9479 45.9394 54.4319 47.054 54.6655 48.3051C54.6665 48.6562 54.6665 49.0084 54.6665 49.3606ZM36.0088 21.0434C36.068 20.9471 36.1113 20.871 36.1589 20.797C37.9016 18.0864 36.2054 14.6282 33.001 14.4199C31.793 14.3416 30.5766 14.3691 29.3644 14.3934C28.4058 14.4125 27.7812 15.0523 27.778 16.0062C27.7654 19.365 27.7654 22.7249 27.778 26.0837C27.7823 27.0503 28.446 27.6996 29.413 27.7145C30.5206 27.7314 31.6282 27.7451 32.7347 27.7113C34.3263 27.6616 35.5808 26.9795 36.347 25.5517C37.1745 24.0077 36.9928 22.5081 36.0088 21.0434ZM16.661 21.0159C16.6959 21.019 16.7318 21.0222 16.7667 21.0254C16.7667 21.6938 16.7593 22.3621 16.7677 23.0305C16.7941 24.9384 17.6238 26.3629 19.3295 27.2481C21.9949 28.6324 25.5132 26.7997 25.7563 23.8057C25.9042 21.992 25.8789 20.1497 25.7626 18.3318C25.6347 16.3235 23.8634 14.6219 21.9336 14.4315C19.6307 14.2041 17.5783 15.4214 17.0351 17.5259C16.7455 18.6469 16.7751 19.8494 16.661 21.0159ZM11.6356 17.5069C11.6504 17.7797 11.6673 17.9511 11.6673 18.1224C11.6695 19.8092 11.6695 21.4971 11.6684 23.1839C11.6673 24.0616 11.3672 24.5058 10.7595 24.5418C10.193 24.5746 9.87069 24.1981 9.7259 23.334C9.60119 22.5906 8.9787 22.0428 8.23151 22.0184C7.46951 21.9941 6.80898 22.4721 6.65574 23.2198C6.59444 23.5191 6.62403 23.8459 6.65785 24.1558C6.87239 26.1546 8.73351 27.7599 10.769 27.7145C12.8658 27.6679 14.7153 26.0266 14.7766 23.9929C14.858 21.3067 14.8305 18.6163 14.8147 15.928C14.8094 15.0185 14.1858 14.4188 13.2716 14.3945C12.1313 14.3649 10.9888 14.3829 9.84744 14.3924C9.65932 14.3945 9.46168 14.4357 9.28413 14.5024C8.63417 14.7488 8.22833 15.4098 8.29175 16.0824C8.36256 16.8301 8.87724 17.4255 9.62338 17.4942C10.2691 17.5545 10.9212 17.5069 11.6356 17.5069Z"
+                  fill="black"
+                  fill-opacity="0.5"
+                />
+                <path
+                  d="M36.009 21.0433C36.9929 22.508 37.1747 24.0076 36.3461 25.5517C35.5799 26.9794 34.3265 27.6615 32.7338 27.7112C31.6272 27.7461 30.5197 27.7313 29.4121 27.7144C28.4451 27.6996 27.7813 27.0502 27.7771 26.0836C27.7644 22.7248 27.7644 19.365 27.7771 16.0062C27.7803 15.0522 28.406 14.4124 29.3635 14.3934C30.5757 14.3691 31.7921 14.3416 33.0001 14.4198C36.2045 14.6271 37.9018 18.0853 36.158 20.7969C36.1115 20.8699 36.0671 20.946 36.009 21.0433ZM30.9561 19.5024C31.6769 19.4686 32.3427 19.4813 32.9938 19.3914C33.4651 19.3258 33.6945 18.9493 33.6828 18.4724C33.6723 18.0176 33.4281 17.6538 32.9885 17.6094C32.3227 17.5428 31.6442 17.5914 30.9551 17.5914C30.9561 18.2207 30.9561 18.8108 30.9561 19.5024ZM30.9625 24.5322C31.6125 24.5322 32.2413 24.5724 32.8617 24.5195C33.3457 24.4783 33.6511 24.1557 33.6828 23.646C33.7135 23.1627 33.4704 22.7618 33.0223 22.7047C32.3438 22.6191 31.6463 22.6825 30.9625 22.6825C30.9625 23.3202 30.9625 23.9093 30.9625 24.5322Z"
+                  fill="#AAF0C2"
+                />
+                <path
+                  d="M16.6611 21.0158C16.7753 19.8504 16.7467 18.6469 17.0353 17.5259C17.5785 15.4224 19.6309 14.2051 21.9338 14.4314C23.8636 14.6218 25.6349 16.3224 25.7628 18.3317C25.879 20.1497 25.9033 21.9919 25.7564 23.8056C25.5123 26.8006 21.9951 28.6323 19.3297 27.248C17.6239 26.3618 16.7943 24.9372 16.7679 23.0304C16.7584 22.3621 16.65 21.7988 16.65 21.1304C16.65 21.1304 16.65 21.0401 16.6611 21.0158ZM19.9321 21.0295C19.931 21.0295 19.931 21.0295 19.93 21.0295C19.93 21.6789 19.93 22.3282 19.93 22.9776C19.93 23.0125 19.93 23.0474 19.931 23.0833C19.9617 23.9251 20.5208 24.5343 21.2754 24.5491C22.0469 24.5639 22.681 23.9357 22.6915 23.0939C22.7085 21.7244 22.7085 20.3548 22.6905 18.9863C22.6799 18.1625 22.0765 17.5608 21.3134 17.5576C20.5419 17.5544 19.9575 18.1414 19.9363 18.9758C19.9184 19.66 19.9321 20.3442 19.9321 21.0295Z"
+                  fill="#AAF0C2"
+                />
+                <path
+                  d="M11.6358 17.5068C10.9214 17.5068 10.2682 17.5544 9.62565 17.4941C8.87951 17.4254 8.36483 16.83 8.29402 16.0823C8.22955 15.4097 8.63644 14.7487 9.2864 14.5023C9.4629 14.4357 9.66053 14.3934 9.84971 14.3923C10.9911 14.3817 12.1336 14.3638 13.2739 14.3944C14.1881 14.4188 14.8116 15.0173 14.8169 15.9279C14.8328 18.6162 14.8603 21.3066 14.7789 23.9928C14.7176 26.0265 12.8681 27.6678 10.7713 27.7144C8.73578 27.7599 6.87466 26.1545 6.66012 24.1557C6.62736 23.8458 6.59671 23.519 6.658 23.2198C6.81231 22.4721 7.47178 21.994 8.23378 22.0184C8.98097 22.0427 9.60452 22.5916 9.72817 23.334C9.87296 24.198 10.1953 24.5745 10.7618 24.5417C11.3684 24.5068 11.6696 24.0616 11.6707 23.1838C11.6728 21.497 11.6717 19.8091 11.6696 18.1223C11.6686 17.951 11.6506 17.7797 11.6358 17.5068Z"
+                  fill="#AAF0C2"
+                />
+                <path
+                  d="M30.9561 19.5024C30.9561 18.8108 30.9561 18.2207 30.9561 17.5914C31.6452 17.5914 32.3237 17.5417 32.9895 17.6094C33.4292 17.6538 33.6733 18.0176 33.6839 18.4724C33.6945 18.9493 33.4651 19.3269 32.9948 19.3914C32.3427 19.4813 31.6769 19.4686 30.9561 19.5024Z"
+                  fill="#2ADA66"
+                />
+                <path
+                  d="M30.9561 19.5024C30.9561 18.8108 30.9561 18.2207 30.9561 17.5914C31.6452 17.5914 32.3237 17.5417 32.9895 17.6094C33.4292 17.6538 33.6733 18.0176 33.6839 18.4724C33.6945 18.9493 33.4651 19.3269 32.9948 19.3914C32.3427 19.4813 31.6769 19.4686 30.9561 19.5024Z"
+                  fill="black"
+                  fill-opacity="0.5"
+                />
+                <path
+                  d="M30.9625 24.5322C30.9625 23.9093 30.9625 23.3202 30.9625 22.6825C31.6473 22.6825 32.3438 22.6191 33.0223 22.7047C33.4694 22.7618 33.7124 23.1627 33.6828 23.646C33.6501 24.1557 33.3457 24.4783 32.8617 24.5195C32.2402 24.5724 31.6125 24.5322 30.9625 24.5322Z"
+                  fill="#2ADA66"
+                />
+                <path
+                  d="M30.9625 24.5322C30.9625 23.9093 30.9625 23.3202 30.9625 22.6825C31.6473 22.6825 32.3438 22.6191 33.0223 22.7047C33.4694 22.7618 33.7124 23.1627 33.6828 23.646C33.6501 24.1557 33.3457 24.4783 32.8617 24.5195C32.2402 24.5724 31.6125 24.5322 30.9625 24.5322Z"
+                  fill="black"
+                  fill-opacity="0.5"
+                />
+                <path
+                  d="M19.9321 21.0296C19.9321 20.3453 19.9173 19.66 19.9353 18.9758C19.9575 18.1414 20.5419 17.5544 21.3123 17.5576C22.0754 17.5608 22.6789 18.1625 22.6894 18.9863C22.7074 20.3559 22.7063 21.7254 22.6905 23.0939C22.6799 23.9357 22.0469 24.5639 21.2743 24.5491C20.5197 24.5343 19.9617 23.9241 19.93 23.0833C19.9289 23.0484 19.9289 23.0135 19.9289 22.9776C19.9289 22.3282 19.9289 21.6789 19.9289 21.0296C19.931 21.0296 19.9321 21.0296 19.9321 21.0296Z"
+                  fill="#2ADA66"
+                />
+                <path
+                  d="M19.9321 21.0296C19.9321 20.3453 19.9173 19.66 19.9353 18.9758C19.9575 18.1414 20.5419 17.5544 21.3123 17.5576C22.0754 17.5608 22.6789 18.1625 22.6894 18.9863C22.7074 20.3559 22.7063 21.7254 22.6905 23.0939C22.6799 23.9357 22.0469 24.5639 21.2743 24.5491C20.5197 24.5343 19.9617 23.9241 19.93 23.0833C19.9289 23.0484 19.9289 23.0135 19.9289 22.9776C19.9289 22.3282 19.9289 21.6789 19.9289 21.0296C19.931 21.0296 19.9321 21.0296 19.9321 21.0296Z"
+                  fill="black"
+                  fill-opacity="0.5"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_3794_144">
+                  <rect
+                    width="54"
+                    height="54"
+                    fill="white"
+                    transform="translate(0.666687)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+            <span class="intro-card__title">
+              Đa dạng việc làm, thêm nhiều lựa chọn hấp dẫn
+            </span>
+            <span class="intro-card__content"
+              >Hơn 200+ việc làm IT, giúp các bạn REC có một kho việc làm để các
+              bạn tìm kiếm, sale jobs đến những ứng viên phù hợp.</span
+            >
+          </li>
+
+          <li class="intro-card">
+            <img src="./assets/images/Dollar.svg" alt="dollar" />
+            <span class="intro-card__title">
+              Cơ chế hoa hồng hấp dẫn, rõ ràng và minh bạch
+            </span>
+            <span class="intro-card__content"
+              >RecLand đem đến cho các bạn REC mức hoa hồng hấp dẫn, giúp cho
+              các bạn REC có được mức thu nhập tương xứng mà không cần đến công
+              ty làm việc.</span
+            >
+          </li>
+
+          <li class="intro-card">
+            <img src="./assets/images/Network.svg" alt="network" />
+            <span class="intro-card__title">
+              Mở rộng network và học hỏi từ cộng đồng
+            </span>
+            <span class="intro-card__content"
+              >RecLand cũng thường xuyên tổ chức những buổi chia sẻ, buổi
+              offline nhằm giúp các bạn REC trau dồi, học hỏi và mở rộng được
+              network trong lĩnh vực tuyển dụng.</span
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- end introduction  -->
+
+      <!-- partner  -->
+      <div class="partner-wrap">
+        <h2 class="heading">Đối Tác</h2>
+        <ul class="partner-list">
+          <li class="partner-item">
+            <img
+              src="https://images.unsplash.com/photo-1607853554439-0069ec0f29b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Ym13fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+              alt="bmw1"
+            />
+          </li>
+          <li class="partner-item">
+            <img
+              src="https://images.unsplash.com/photo-1607853554439-0069ec0f29b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Ym13fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+              alt="bmw1"
+            />
+          </li>
+          <li class="partner-item">
+            <img
+              src="https://images.unsplash.com/photo-1607853554439-0069ec0f29b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Ym13fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+              alt="bmw1"
+            />
+          </li>
+          <li class="partner-item">
+            <img
+              src="https://images.unsplash.com/photo-1607853554439-0069ec0f29b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Ym13fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+              alt="bmw1"
+            />
+          </li>
+          <li class="partner-item">
+            <img
+              src="https://images.unsplash.com/photo-1607853554439-0069ec0f29b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Ym13fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+              alt="bmw1"
+            />
+          </li>
+        </ul>
+      </div>
+      <!-- end partner  -->
+
+      <!-- process working -->
+      <div class="process-wrap">
+        <div class="process-header">
+          <p class="sub-heading">Quy trình làm việc</p>
+          <h2 class="heading">Hợp tác cùng RecLand</h2>
+        </div>
+        <ul class="process-list">
+          <li class="process-step">
+            <img src="./assets/images/step1.svg" alt="" />
+            <svg
+              width="103"
+              height="100"
+              viewBox="0 0 103 100"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.1024 13.3679L49.8615 4.85813C61.435 1.75702 69.8186 6.81599 73.042 18.8461L81.8792 51.8267C85.1026 63.8568 80.3717 72.4298 68.7982 75.5309L37.0391 84.0407C25.4657 87.1418 17.1122 82.0747 13.8888 70.0447L5.05166 37.064C1.82821 25.034 6.52895 16.469 18.1024 13.3679Z"
+                fill="url(#paint0_linear_3794_53)"
+              />
+              <g filter="url(#filter0_f_3794_53)">
+                <path
+                  d="M26.3009 23.5464L47.8627 17.769C55.7201 15.6636 61.35 18.8671 63.4291 26.6267L69.1292 47.8997C71.2084 55.6593 67.9345 61.2486 60.0771 63.3539L38.5154 69.1314C30.658 71.2368 25.0486 68.0277 22.9695 60.2682L17.2694 38.9952C15.1902 31.2356 18.4435 25.6518 26.3009 23.5464Z"
+                  fill="#30AD31"
+                  fill-opacity="0.5"
+                />
+              </g>
+              <g filter="url(#filter1_b_3794_53)">
+                <mask
+                  id="path-3-outside-1_3794_53"
+                  maskUnits="userSpaceOnUse"
+                  x="22.2226"
+                  y="19.2031"
+                  width="81"
+                  height="81"
+                  fill="black"
+                >
+                  <rect
+                    fill="white"
+                    x="22.2226"
+                    y="19.2031"
+                    width="81"
+                    height="81"
+                  />
+                  <path
+                    d="M80.9651 20.2031H44.2163C30.785 20.2031 23.2226 27.7656 23.2226 41.1968V77.985C23.2226 91.3374 30.785 98.9787 44.2163 98.9787H81.0045C94.3963 98.9787 101.998 91.3374 101.998 77.985V41.1968C101.998 27.7656 94.3569 20.2031 80.9651 20.2031"
+                  />
+                </mask>
+                <path
+                  d="M80.9651 20.2031H44.2163C30.785 20.2031 23.2226 27.7656 23.2226 41.1968V77.985C23.2226 91.3374 30.785 98.9787 44.2163 98.9787H81.0045C94.3963 98.9787 101.998 91.3374 101.998 77.985V41.1968C101.998 27.7656 94.3569 20.2031 80.9651 20.2031"
+                  fill="#72DC60"
+                  fill-opacity="0.35"
+                />
+                <path
+                  d="M80.9651 21.2031C81.5174 21.2031 81.9651 20.7554 81.9651 20.2031C81.9651 19.6508 81.5174 19.2031 80.9651 19.2031V21.2031ZM80.9651 19.2031C80.4128 19.2031 79.9651 19.6508 79.9651 20.2031C79.9651 20.7554 80.4128 21.2031 80.9651 21.2031V19.2031ZM80.9651 19.2031H44.2163V21.2031H80.9651V19.2031ZM44.2163 19.2031C37.3163 19.2031 31.783 21.1487 27.9756 24.9561C24.1682 28.7636 22.2226 34.2969 22.2226 41.1968H24.2226C24.2226 34.6655 26.0582 29.702 29.3898 26.3704C32.7215 23.0387 37.685 21.2031 44.2163 21.2031V19.2031ZM22.2226 41.1968V77.985H24.2226V41.1968H22.2226ZM22.2226 77.985C22.2226 84.8469 24.1689 90.3789 27.9746 94.1951C31.7808 98.0118 37.3136 99.9787 44.2163 99.9787V97.9787C37.6877 97.9787 32.7237 96.1249 29.3908 92.7829C26.0575 89.4404 24.2226 84.4755 24.2226 77.985H22.2226ZM44.2163 99.9787H81.0045V97.9787H44.2163V99.9787ZM81.0045 99.9787C87.8881 99.9787 93.4202 98.0115 97.2308 94.1956C101.041 90.38 102.998 84.8483 102.998 77.985H100.998C100.998 84.4741 99.1542 89.4393 95.8156 92.7824C92.4773 96.1253 87.5126 97.9787 81.0045 97.9787V99.9787ZM102.998 77.985V41.1968H100.998V77.985H102.998ZM102.998 41.1968C102.998 34.2941 101.031 28.761 97.2092 24.9547C93.3878 21.149 87.8459 19.2031 80.9651 19.2031V21.2031C87.4761 21.2031 92.4507 23.0385 95.7979 26.3718C99.1444 29.7045 100.998 34.6683 100.998 41.1968H102.998Z"
+                  fill="url(#paint1_linear_3794_53)"
+                  mask="url(#path-3-outside-1_3794_53)"
+                />
+              </g>
+              <g filter="url(#filter2_bd_3794_53)">
+                <mask id="path-5-inside-2_3794_53" fill="white">
+                  <path
+                    d="M77.0261 62.8566H65.84V74.0034C65.84 75.8152 64.3826 77.2726 62.5708 77.2726C60.759 77.2726 59.3016 75.8152 59.3016 74.0034V62.8566H48.1549C46.343 62.8173 44.8857 61.3599 44.8857 59.5481C44.8857 58.6776 45.2402 57.8544 45.831 57.2242C46.4612 56.6334 47.2883 56.2789 48.1549 56.2789H59.3016V45.1715C59.3016 43.3597 60.759 41.9023 62.5708 41.9023C64.3826 41.9023 65.84 43.3597 65.84 45.1715V56.2789H77.0261C78.8379 56.2789 80.2953 57.7362 80.2953 59.5481C80.2953 61.3599 78.8379 62.8173 77.0261 62.8566"
+                  />
+                </mask>
+                <path
+                  d="M77.0261 62.8566H65.84V74.0034C65.84 75.8152 64.3826 77.2726 62.5708 77.2726C60.759 77.2726 59.3016 75.8152 59.3016 74.0034V62.8566H48.1549C46.343 62.8173 44.8857 61.3599 44.8857 59.5481C44.8857 58.6776 45.2402 57.8544 45.831 57.2242C46.4612 56.6334 47.2883 56.2789 48.1549 56.2789H59.3016V45.1715C59.3016 43.3597 60.759 41.9023 62.5708 41.9023C64.3826 41.9023 65.84 43.3597 65.84 45.1715V56.2789H77.0261C78.8379 56.2789 80.2953 57.7362 80.2953 59.5481C80.2953 61.3599 78.8379 62.8173 77.0261 62.8566"
+                  fill="url(#paint2_linear_3794_53)"
+                />
+                <path
+                  d="M65.84 62.8566V62.6566H65.64V62.8566H65.84ZM59.3016 62.8566H59.5016V62.6566H59.3016V62.8566ZM48.1549 62.8566L48.1505 63.0566H48.1549V62.8566ZM45.831 57.2242L45.6939 57.078L45.6851 57.0874L45.831 57.2242ZM59.3016 56.2789V56.4789H59.5016V56.2789H59.3016ZM65.84 56.2789H65.64V56.4789H65.84V56.2789ZM77.0261 62.6566H65.84V63.0566H77.0261V62.6566ZM65.64 62.8566V74.0034H66.04V62.8566H65.64ZM65.64 74.0034C65.64 75.7048 64.2722 77.0726 62.5708 77.0726V77.4726C64.4931 77.4726 66.04 75.9257 66.04 74.0034H65.64ZM62.5708 77.0726C60.8694 77.0726 59.5016 75.7048 59.5016 74.0034H59.1016C59.1016 75.9257 60.6485 77.4726 62.5708 77.4726V77.0726ZM59.5016 74.0034V62.8566H59.1016V74.0034H59.5016ZM59.3016 62.6566H48.1549V63.0566H59.3016V62.6566ZM48.1592 62.6567C46.4536 62.6196 45.0857 61.2486 45.0857 59.5481H44.6857C44.6857 61.4712 46.2325 63.0149 48.1505 63.0566L48.1592 62.6567ZM45.0857 59.5481C45.0857 58.7327 45.4178 57.9573 45.9769 57.361L45.6851 57.0874C45.0625 57.7515 44.6857 58.6225 44.6857 59.5481H45.0857ZM45.9678 57.3701C46.564 56.8111 47.3433 56.4789 48.1549 56.4789V56.0789C47.2334 56.0789 46.3583 56.4556 45.6942 57.0783L45.9678 57.3701ZM48.1549 56.4789H59.3016V56.0789H48.1549V56.4789ZM59.5016 56.2789V45.1715H59.1016V56.2789H59.5016ZM59.5016 45.1715C59.5016 43.4701 60.8694 42.1023 62.5708 42.1023V41.7023C60.6485 41.7023 59.1016 43.2492 59.1016 45.1715H59.5016ZM62.5708 42.1023C64.2722 42.1023 65.64 43.4701 65.64 45.1715H66.04C66.04 43.2492 64.4931 41.7023 62.5708 41.7023V42.1023ZM65.64 45.1715V56.2789H66.04V45.1715H65.64ZM65.84 56.4789H77.0261V56.0789H65.84V56.4789ZM77.0261 56.4789C78.7275 56.4789 80.0953 57.8467 80.0953 59.5481H80.4953C80.4953 57.6258 78.9484 56.0789 77.0261 56.0789V56.4789ZM80.0953 59.5481C80.0953 61.2486 78.7274 62.6196 77.0218 62.6567L77.0304 63.0566C78.9485 63.0149 80.4953 61.4712 80.4953 59.5481H80.0953Z"
+                  fill="url(#paint3_linear_3794_53)"
+                  fill-opacity="0.5"
+                  mask="url(#path-5-inside-2_3794_53)"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_f_3794_53"
+                  x="0.655853"
+                  y="1.13678"
+                  width="85.0848"
+                  height="84.6262"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  />
+                  <feGaussianBlur
+                    stdDeviation="8"
+                    result="effect1_foregroundBlur_3794_53"
+                  />
+                </filter>
+                <filter
+                  id="filter1_b_3794_53"
+                  x="-1.7774"
+                  y="-4.79688"
+                  width="128.776"
+                  height="128.776"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feGaussianBlur in="BackgroundImageFix" stdDeviation="12" />
+                  <feComposite
+                    in2="SourceAlpha"
+                    operator="in"
+                    result="effect1_backgroundBlur_3794_53"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_backgroundBlur_3794_53"
+                    result="shape"
+                  />
+                </filter>
+                <filter
+                  id="filter2_bd_3794_53"
+                  x="29.8857"
+                  y="26.9023"
+                  width="65.4096"
+                  height="65.3702"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feGaussianBlur in="BackgroundImageFix" stdDeviation="7.5" />
+                  <feComposite
+                    in2="SourceAlpha"
+                    operator="in"
+                    result="effect1_backgroundBlur_3794_53"
+                  />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"
+                  />
+                  <feOffset dx="5" dy="5" />
+                  <feGaussianBlur stdDeviation="5" />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0.454902 0 0 0 0 0.870588 0 0 0 0 0.376471 0 0 0 0.5 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="effect1_backgroundBlur_3794_53"
+                    result="effect2_dropShadow_3794_53"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect2_dropShadow_3794_53"
+                    result="shape"
+                  />
+                </filter>
+                <linearGradient
+                  id="paint0_linear_3794_53"
+                  x1="0.00187343"
+                  y1="18.218"
+                  x2="65.1991"
+                  y2="61.1595"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#9BF763" />
+                  <stop offset="1" stop-color="#26AB5B" />
+                </linearGradient>
+                <linearGradient
+                  id="paint1_linear_3794_53"
+                  x1="35.7624"
+                  y1="29.3806"
+                  x2="86.0128"
+                  y2="91.6169"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="white" stop-opacity="0.25" />
+                  <stop offset="1" stop-color="white" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient
+                  id="paint2_linear_3794_53"
+                  x1="77.7848"
+                  y1="48.2895"
+                  x2="38.3419"
+                  y2="49.5769"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="white" />
+                  <stop offset="1" stop-color="white" stop-opacity="0.2" />
+                </linearGradient>
+                <linearGradient
+                  id="paint3_linear_3794_53"
+                  x1="48.7001"
+                  y1="53.7673"
+                  x2="78.7677"
+                  y2="53.9335"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="white" />
+                  <stop offset="1" stop-color="white" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <div class="process-step__body">
+              <span class="process-step__title">Tạo một tài khoản</span>
+              <p class="process-step__content">Trở thành member trên RecLand</p>
+            </div>
+          </li>
+          <li class="process-step">
+            <img src="./assets/images/step1.svg" alt="" />
+            <svg
+              width="103"
+              height="100"
+              viewBox="0 0 103 100"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.1024 13.3679L49.8615 4.85813C61.435 1.75702 69.8186 6.81599 73.042 18.8461L81.8792 51.8267C85.1026 63.8568 80.3717 72.4298 68.7982 75.5309L37.0391 84.0407C25.4657 87.1418 17.1122 82.0747 13.8888 70.0447L5.05166 37.064C1.82821 25.034 6.52895 16.469 18.1024 13.3679Z"
+                fill="url(#paint0_linear_3794_53)"
+              />
+              <g filter="url(#filter0_f_3794_53)">
+                <path
+                  d="M26.3009 23.5464L47.8627 17.769C55.7201 15.6636 61.35 18.8671 63.4291 26.6267L69.1292 47.8997C71.2084 55.6593 67.9345 61.2486 60.0771 63.3539L38.5154 69.1314C30.658 71.2368 25.0486 68.0277 22.9695 60.2682L17.2694 38.9952C15.1902 31.2356 18.4435 25.6518 26.3009 23.5464Z"
+                  fill="#30AD31"
+                  fill-opacity="0.5"
+                />
+              </g>
+              <g filter="url(#filter1_b_3794_53)">
+                <mask
+                  id="path-3-outside-1_3794_53"
+                  maskUnits="userSpaceOnUse"
+                  x="22.2226"
+                  y="19.2031"
+                  width="81"
+                  height="81"
+                  fill="black"
+                >
+                  <rect
+                    fill="white"
+                    x="22.2226"
+                    y="19.2031"
+                    width="81"
+                    height="81"
+                  />
+                  <path
+                    d="M80.9651 20.2031H44.2163C30.785 20.2031 23.2226 27.7656 23.2226 41.1968V77.985C23.2226 91.3374 30.785 98.9787 44.2163 98.9787H81.0045C94.3963 98.9787 101.998 91.3374 101.998 77.985V41.1968C101.998 27.7656 94.3569 20.2031 80.9651 20.2031"
+                  />
+                </mask>
+                <path
+                  d="M80.9651 20.2031H44.2163C30.785 20.2031 23.2226 27.7656 23.2226 41.1968V77.985C23.2226 91.3374 30.785 98.9787 44.2163 98.9787H81.0045C94.3963 98.9787 101.998 91.3374 101.998 77.985V41.1968C101.998 27.7656 94.3569 20.2031 80.9651 20.2031"
+                  fill="#72DC60"
+                  fill-opacity="0.35"
+                />
+                <path
+                  d="M80.9651 21.2031C81.5174 21.2031 81.9651 20.7554 81.9651 20.2031C81.9651 19.6508 81.5174 19.2031 80.9651 19.2031V21.2031ZM80.9651 19.2031C80.4128 19.2031 79.9651 19.6508 79.9651 20.2031C79.9651 20.7554 80.4128 21.2031 80.9651 21.2031V19.2031ZM80.9651 19.2031H44.2163V21.2031H80.9651V19.2031ZM44.2163 19.2031C37.3163 19.2031 31.783 21.1487 27.9756 24.9561C24.1682 28.7636 22.2226 34.2969 22.2226 41.1968H24.2226C24.2226 34.6655 26.0582 29.702 29.3898 26.3704C32.7215 23.0387 37.685 21.2031 44.2163 21.2031V19.2031ZM22.2226 41.1968V77.985H24.2226V41.1968H22.2226ZM22.2226 77.985C22.2226 84.8469 24.1689 90.3789 27.9746 94.1951C31.7808 98.0118 37.3136 99.9787 44.2163 99.9787V97.9787C37.6877 97.9787 32.7237 96.1249 29.3908 92.7829C26.0575 89.4404 24.2226 84.4755 24.2226 77.985H22.2226ZM44.2163 99.9787H81.0045V97.9787H44.2163V99.9787ZM81.0045 99.9787C87.8881 99.9787 93.4202 98.0115 97.2308 94.1956C101.041 90.38 102.998 84.8483 102.998 77.985H100.998C100.998 84.4741 99.1542 89.4393 95.8156 92.7824C92.4773 96.1253 87.5126 97.9787 81.0045 97.9787V99.9787ZM102.998 77.985V41.1968H100.998V77.985H102.998ZM102.998 41.1968C102.998 34.2941 101.031 28.761 97.2092 24.9547C93.3878 21.149 87.8459 19.2031 80.9651 19.2031V21.2031C87.4761 21.2031 92.4507 23.0385 95.7979 26.3718C99.1444 29.7045 100.998 34.6683 100.998 41.1968H102.998Z"
+                  fill="url(#paint1_linear_3794_53)"
+                  mask="url(#path-3-outside-1_3794_53)"
+                />
+              </g>
+              <g filter="url(#filter2_bd_3794_53)">
+                <mask id="path-5-inside-2_3794_53" fill="white">
+                  <path
+                    d="M77.0261 62.8566H65.84V74.0034C65.84 75.8152 64.3826 77.2726 62.5708 77.2726C60.759 77.2726 59.3016 75.8152 59.3016 74.0034V62.8566H48.1549C46.343 62.8173 44.8857 61.3599 44.8857 59.5481C44.8857 58.6776 45.2402 57.8544 45.831 57.2242C46.4612 56.6334 47.2883 56.2789 48.1549 56.2789H59.3016V45.1715C59.3016 43.3597 60.759 41.9023 62.5708 41.9023C64.3826 41.9023 65.84 43.3597 65.84 45.1715V56.2789H77.0261C78.8379 56.2789 80.2953 57.7362 80.2953 59.5481C80.2953 61.3599 78.8379 62.8173 77.0261 62.8566"
+                  />
+                </mask>
+                <path
+                  d="M77.0261 62.8566H65.84V74.0034C65.84 75.8152 64.3826 77.2726 62.5708 77.2726C60.759 77.2726 59.3016 75.8152 59.3016 74.0034V62.8566H48.1549C46.343 62.8173 44.8857 61.3599 44.8857 59.5481C44.8857 58.6776 45.2402 57.8544 45.831 57.2242C46.4612 56.6334 47.2883 56.2789 48.1549 56.2789H59.3016V45.1715C59.3016 43.3597 60.759 41.9023 62.5708 41.9023C64.3826 41.9023 65.84 43.3597 65.84 45.1715V56.2789H77.0261C78.8379 56.2789 80.2953 57.7362 80.2953 59.5481C80.2953 61.3599 78.8379 62.8173 77.0261 62.8566"
+                  fill="url(#paint2_linear_3794_53)"
+                />
+                <path
+                  d="M65.84 62.8566V62.6566H65.64V62.8566H65.84ZM59.3016 62.8566H59.5016V62.6566H59.3016V62.8566ZM48.1549 62.8566L48.1505 63.0566H48.1549V62.8566ZM45.831 57.2242L45.6939 57.078L45.6851 57.0874L45.831 57.2242ZM59.3016 56.2789V56.4789H59.5016V56.2789H59.3016ZM65.84 56.2789H65.64V56.4789H65.84V56.2789ZM77.0261 62.6566H65.84V63.0566H77.0261V62.6566ZM65.64 62.8566V74.0034H66.04V62.8566H65.64ZM65.64 74.0034C65.64 75.7048 64.2722 77.0726 62.5708 77.0726V77.4726C64.4931 77.4726 66.04 75.9257 66.04 74.0034H65.64ZM62.5708 77.0726C60.8694 77.0726 59.5016 75.7048 59.5016 74.0034H59.1016C59.1016 75.9257 60.6485 77.4726 62.5708 77.4726V77.0726ZM59.5016 74.0034V62.8566H59.1016V74.0034H59.5016ZM59.3016 62.6566H48.1549V63.0566H59.3016V62.6566ZM48.1592 62.6567C46.4536 62.6196 45.0857 61.2486 45.0857 59.5481H44.6857C44.6857 61.4712 46.2325 63.0149 48.1505 63.0566L48.1592 62.6567ZM45.0857 59.5481C45.0857 58.7327 45.4178 57.9573 45.9769 57.361L45.6851 57.0874C45.0625 57.7515 44.6857 58.6225 44.6857 59.5481H45.0857ZM45.9678 57.3701C46.564 56.8111 47.3433 56.4789 48.1549 56.4789V56.0789C47.2334 56.0789 46.3583 56.4556 45.6942 57.0783L45.9678 57.3701ZM48.1549 56.4789H59.3016V56.0789H48.1549V56.4789ZM59.5016 56.2789V45.1715H59.1016V56.2789H59.5016ZM59.5016 45.1715C59.5016 43.4701 60.8694 42.1023 62.5708 42.1023V41.7023C60.6485 41.7023 59.1016 43.2492 59.1016 45.1715H59.5016ZM62.5708 42.1023C64.2722 42.1023 65.64 43.4701 65.64 45.1715H66.04C66.04 43.2492 64.4931 41.7023 62.5708 41.7023V42.1023ZM65.64 45.1715V56.2789H66.04V45.1715H65.64ZM65.84 56.4789H77.0261V56.0789H65.84V56.4789ZM77.0261 56.4789C78.7275 56.4789 80.0953 57.8467 80.0953 59.5481H80.4953C80.4953 57.6258 78.9484 56.0789 77.0261 56.0789V56.4789ZM80.0953 59.5481C80.0953 61.2486 78.7274 62.6196 77.0218 62.6567L77.0304 63.0566C78.9485 63.0149 80.4953 61.4712 80.4953 59.5481H80.0953Z"
+                  fill="url(#paint3_linear_3794_53)"
+                  fill-opacity="0.5"
+                  mask="url(#path-5-inside-2_3794_53)"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_f_3794_53"
+                  x="0.655853"
+                  y="1.13678"
+                  width="85.0848"
+                  height="84.6262"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  />
+                  <feGaussianBlur
+                    stdDeviation="8"
+                    result="effect1_foregroundBlur_3794_53"
+                  />
+                </filter>
+                <filter
+                  id="filter1_b_3794_53"
+                  x="-1.7774"
+                  y="-4.79688"
+                  width="128.776"
+                  height="128.776"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feGaussianBlur in="BackgroundImageFix" stdDeviation="12" />
+                  <feComposite
+                    in2="SourceAlpha"
+                    operator="in"
+                    result="effect1_backgroundBlur_3794_53"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_backgroundBlur_3794_53"
+                    result="shape"
+                  />
+                </filter>
+                <filter
+                  id="filter2_bd_3794_53"
+                  x="29.8857"
+                  y="26.9023"
+                  width="65.4096"
+                  height="65.3702"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feGaussianBlur in="BackgroundImageFix" stdDeviation="7.5" />
+                  <feComposite
+                    in2="SourceAlpha"
+                    operator="in"
+                    result="effect1_backgroundBlur_3794_53"
+                  />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"
+                  />
+                  <feOffset dx="5" dy="5" />
+                  <feGaussianBlur stdDeviation="5" />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0.454902 0 0 0 0 0.870588 0 0 0 0 0.376471 0 0 0 0.5 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="effect1_backgroundBlur_3794_53"
+                    result="effect2_dropShadow_3794_53"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect2_dropShadow_3794_53"
+                    result="shape"
+                  />
+                </filter>
+                <linearGradient
+                  id="paint0_linear_3794_53"
+                  x1="0.00187343"
+                  y1="18.218"
+                  x2="65.1991"
+                  y2="61.1595"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#9BF763" />
+                  <stop offset="1" stop-color="#26AB5B" />
+                </linearGradient>
+                <linearGradient
+                  id="paint1_linear_3794_53"
+                  x1="35.7624"
+                  y1="29.3806"
+                  x2="86.0128"
+                  y2="91.6169"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="white" stop-opacity="0.25" />
+                  <stop offset="1" stop-color="white" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient
+                  id="paint2_linear_3794_53"
+                  x1="77.7848"
+                  y1="48.2895"
+                  x2="38.3419"
+                  y2="49.5769"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="white" />
+                  <stop offset="1" stop-color="white" stop-opacity="0.2" />
+                </linearGradient>
+                <linearGradient
+                  id="paint3_linear_3794_53"
+                  x1="48.7001"
+                  y1="53.7673"
+                  x2="78.7677"
+                  y2="53.9335"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="white" />
+                  <stop offset="1" stop-color="white" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <div class="process-step__body">
+              <span class="process-step__title">Tạo một tài khoản</span>
+              <p class="process-step__content">Trở thành member trên RecLand</p>
+            </div>
+          </li>
+          <li class="process-step">
+            <img src="./assets/images/step1.svg" alt="" />
+            <svg
+              width="103"
+              height="100"
+              viewBox="0 0 103 100"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.1024 13.3679L49.8615 4.85813C61.435 1.75702 69.8186 6.81599 73.042 18.8461L81.8792 51.8267C85.1026 63.8568 80.3717 72.4298 68.7982 75.5309L37.0391 84.0407C25.4657 87.1418 17.1122 82.0747 13.8888 70.0447L5.05166 37.064C1.82821 25.034 6.52895 16.469 18.1024 13.3679Z"
+                fill="url(#paint0_linear_3794_53)"
+              />
+              <g filter="url(#filter0_f_3794_53)">
+                <path
+                  d="M26.3009 23.5464L47.8627 17.769C55.7201 15.6636 61.35 18.8671 63.4291 26.6267L69.1292 47.8997C71.2084 55.6593 67.9345 61.2486 60.0771 63.3539L38.5154 69.1314C30.658 71.2368 25.0486 68.0277 22.9695 60.2682L17.2694 38.9952C15.1902 31.2356 18.4435 25.6518 26.3009 23.5464Z"
+                  fill="#30AD31"
+                  fill-opacity="0.5"
+                />
+              </g>
+              <g filter="url(#filter1_b_3794_53)">
+                <mask
+                  id="path-3-outside-1_3794_53"
+                  maskUnits="userSpaceOnUse"
+                  x="22.2226"
+                  y="19.2031"
+                  width="81"
+                  height="81"
+                  fill="black"
+                >
+                  <rect
+                    fill="white"
+                    x="22.2226"
+                    y="19.2031"
+                    width="81"
+                    height="81"
+                  />
+                  <path
+                    d="M80.9651 20.2031H44.2163C30.785 20.2031 23.2226 27.7656 23.2226 41.1968V77.985C23.2226 91.3374 30.785 98.9787 44.2163 98.9787H81.0045C94.3963 98.9787 101.998 91.3374 101.998 77.985V41.1968C101.998 27.7656 94.3569 20.2031 80.9651 20.2031"
+                  />
+                </mask>
+                <path
+                  d="M80.9651 20.2031H44.2163C30.785 20.2031 23.2226 27.7656 23.2226 41.1968V77.985C23.2226 91.3374 30.785 98.9787 44.2163 98.9787H81.0045C94.3963 98.9787 101.998 91.3374 101.998 77.985V41.1968C101.998 27.7656 94.3569 20.2031 80.9651 20.2031"
+                  fill="#72DC60"
+                  fill-opacity="0.35"
+                />
+                <path
+                  d="M80.9651 21.2031C81.5174 21.2031 81.9651 20.7554 81.9651 20.2031C81.9651 19.6508 81.5174 19.2031 80.9651 19.2031V21.2031ZM80.9651 19.2031C80.4128 19.2031 79.9651 19.6508 79.9651 20.2031C79.9651 20.7554 80.4128 21.2031 80.9651 21.2031V19.2031ZM80.9651 19.2031H44.2163V21.2031H80.9651V19.2031ZM44.2163 19.2031C37.3163 19.2031 31.783 21.1487 27.9756 24.9561C24.1682 28.7636 22.2226 34.2969 22.2226 41.1968H24.2226C24.2226 34.6655 26.0582 29.702 29.3898 26.3704C32.7215 23.0387 37.685 21.2031 44.2163 21.2031V19.2031ZM22.2226 41.1968V77.985H24.2226V41.1968H22.2226ZM22.2226 77.985C22.2226 84.8469 24.1689 90.3789 27.9746 94.1951C31.7808 98.0118 37.3136 99.9787 44.2163 99.9787V97.9787C37.6877 97.9787 32.7237 96.1249 29.3908 92.7829C26.0575 89.4404 24.2226 84.4755 24.2226 77.985H22.2226ZM44.2163 99.9787H81.0045V97.9787H44.2163V99.9787ZM81.0045 99.9787C87.8881 99.9787 93.4202 98.0115 97.2308 94.1956C101.041 90.38 102.998 84.8483 102.998 77.985H100.998C100.998 84.4741 99.1542 89.4393 95.8156 92.7824C92.4773 96.1253 87.5126 97.9787 81.0045 97.9787V99.9787ZM102.998 77.985V41.1968H100.998V77.985H102.998ZM102.998 41.1968C102.998 34.2941 101.031 28.761 97.2092 24.9547C93.3878 21.149 87.8459 19.2031 80.9651 19.2031V21.2031C87.4761 21.2031 92.4507 23.0385 95.7979 26.3718C99.1444 29.7045 100.998 34.6683 100.998 41.1968H102.998Z"
+                  fill="url(#paint1_linear_3794_53)"
+                  mask="url(#path-3-outside-1_3794_53)"
+                />
+              </g>
+              <g filter="url(#filter2_bd_3794_53)">
+                <mask id="path-5-inside-2_3794_53" fill="white">
+                  <path
+                    d="M77.0261 62.8566H65.84V74.0034C65.84 75.8152 64.3826 77.2726 62.5708 77.2726C60.759 77.2726 59.3016 75.8152 59.3016 74.0034V62.8566H48.1549C46.343 62.8173 44.8857 61.3599 44.8857 59.5481C44.8857 58.6776 45.2402 57.8544 45.831 57.2242C46.4612 56.6334 47.2883 56.2789 48.1549 56.2789H59.3016V45.1715C59.3016 43.3597 60.759 41.9023 62.5708 41.9023C64.3826 41.9023 65.84 43.3597 65.84 45.1715V56.2789H77.0261C78.8379 56.2789 80.2953 57.7362 80.2953 59.5481C80.2953 61.3599 78.8379 62.8173 77.0261 62.8566"
+                  />
+                </mask>
+                <path
+                  d="M77.0261 62.8566H65.84V74.0034C65.84 75.8152 64.3826 77.2726 62.5708 77.2726C60.759 77.2726 59.3016 75.8152 59.3016 74.0034V62.8566H48.1549C46.343 62.8173 44.8857 61.3599 44.8857 59.5481C44.8857 58.6776 45.2402 57.8544 45.831 57.2242C46.4612 56.6334 47.2883 56.2789 48.1549 56.2789H59.3016V45.1715C59.3016 43.3597 60.759 41.9023 62.5708 41.9023C64.3826 41.9023 65.84 43.3597 65.84 45.1715V56.2789H77.0261C78.8379 56.2789 80.2953 57.7362 80.2953 59.5481C80.2953 61.3599 78.8379 62.8173 77.0261 62.8566"
+                  fill="url(#paint2_linear_3794_53)"
+                />
+                <path
+                  d="M65.84 62.8566V62.6566H65.64V62.8566H65.84ZM59.3016 62.8566H59.5016V62.6566H59.3016V62.8566ZM48.1549 62.8566L48.1505 63.0566H48.1549V62.8566ZM45.831 57.2242L45.6939 57.078L45.6851 57.0874L45.831 57.2242ZM59.3016 56.2789V56.4789H59.5016V56.2789H59.3016ZM65.84 56.2789H65.64V56.4789H65.84V56.2789ZM77.0261 62.6566H65.84V63.0566H77.0261V62.6566ZM65.64 62.8566V74.0034H66.04V62.8566H65.64ZM65.64 74.0034C65.64 75.7048 64.2722 77.0726 62.5708 77.0726V77.4726C64.4931 77.4726 66.04 75.9257 66.04 74.0034H65.64ZM62.5708 77.0726C60.8694 77.0726 59.5016 75.7048 59.5016 74.0034H59.1016C59.1016 75.9257 60.6485 77.4726 62.5708 77.4726V77.0726ZM59.5016 74.0034V62.8566H59.1016V74.0034H59.5016ZM59.3016 62.6566H48.1549V63.0566H59.3016V62.6566ZM48.1592 62.6567C46.4536 62.6196 45.0857 61.2486 45.0857 59.5481H44.6857C44.6857 61.4712 46.2325 63.0149 48.1505 63.0566L48.1592 62.6567ZM45.0857 59.5481C45.0857 58.7327 45.4178 57.9573 45.9769 57.361L45.6851 57.0874C45.0625 57.7515 44.6857 58.6225 44.6857 59.5481H45.0857ZM45.9678 57.3701C46.564 56.8111 47.3433 56.4789 48.1549 56.4789V56.0789C47.2334 56.0789 46.3583 56.4556 45.6942 57.0783L45.9678 57.3701ZM48.1549 56.4789H59.3016V56.0789H48.1549V56.4789ZM59.5016 56.2789V45.1715H59.1016V56.2789H59.5016ZM59.5016 45.1715C59.5016 43.4701 60.8694 42.1023 62.5708 42.1023V41.7023C60.6485 41.7023 59.1016 43.2492 59.1016 45.1715H59.5016ZM62.5708 42.1023C64.2722 42.1023 65.64 43.4701 65.64 45.1715H66.04C66.04 43.2492 64.4931 41.7023 62.5708 41.7023V42.1023ZM65.64 45.1715V56.2789H66.04V45.1715H65.64ZM65.84 56.4789H77.0261V56.0789H65.84V56.4789ZM77.0261 56.4789C78.7275 56.4789 80.0953 57.8467 80.0953 59.5481H80.4953C80.4953 57.6258 78.9484 56.0789 77.0261 56.0789V56.4789ZM80.0953 59.5481C80.0953 61.2486 78.7274 62.6196 77.0218 62.6567L77.0304 63.0566C78.9485 63.0149 80.4953 61.4712 80.4953 59.5481H80.0953Z"
+                  fill="url(#paint3_linear_3794_53)"
+                  fill-opacity="0.5"
+                  mask="url(#path-5-inside-2_3794_53)"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_f_3794_53"
+                  x="0.655853"
+                  y="1.13678"
+                  width="85.0848"
+                  height="84.6262"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  />
+                  <feGaussianBlur
+                    stdDeviation="8"
+                    result="effect1_foregroundBlur_3794_53"
+                  />
+                </filter>
+                <filter
+                  id="filter1_b_3794_53"
+                  x="-1.7774"
+                  y="-4.79688"
+                  width="128.776"
+                  height="128.776"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feGaussianBlur in="BackgroundImageFix" stdDeviation="12" />
+                  <feComposite
+                    in2="SourceAlpha"
+                    operator="in"
+                    result="effect1_backgroundBlur_3794_53"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_backgroundBlur_3794_53"
+                    result="shape"
+                  />
+                </filter>
+                <filter
+                  id="filter2_bd_3794_53"
+                  x="29.8857"
+                  y="26.9023"
+                  width="65.4096"
+                  height="65.3702"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feGaussianBlur in="BackgroundImageFix" stdDeviation="7.5" />
+                  <feComposite
+                    in2="SourceAlpha"
+                    operator="in"
+                    result="effect1_backgroundBlur_3794_53"
+                  />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"
+                  />
+                  <feOffset dx="5" dy="5" />
+                  <feGaussianBlur stdDeviation="5" />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0.454902 0 0 0 0 0.870588 0 0 0 0 0.376471 0 0 0 0.5 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="effect1_backgroundBlur_3794_53"
+                    result="effect2_dropShadow_3794_53"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect2_dropShadow_3794_53"
+                    result="shape"
+                  />
+                </filter>
+                <linearGradient
+                  id="paint0_linear_3794_53"
+                  x1="0.00187343"
+                  y1="18.218"
+                  x2="65.1991"
+                  y2="61.1595"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#9BF763" />
+                  <stop offset="1" stop-color="#26AB5B" />
+                </linearGradient>
+                <linearGradient
+                  id="paint1_linear_3794_53"
+                  x1="35.7624"
+                  y1="29.3806"
+                  x2="86.0128"
+                  y2="91.6169"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="white" stop-opacity="0.25" />
+                  <stop offset="1" stop-color="white" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient
+                  id="paint2_linear_3794_53"
+                  x1="77.7848"
+                  y1="48.2895"
+                  x2="38.3419"
+                  y2="49.5769"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="white" />
+                  <stop offset="1" stop-color="white" stop-opacity="0.2" />
+                </linearGradient>
+                <linearGradient
+                  id="paint3_linear_3794_53"
+                  x1="48.7001"
+                  y1="53.7673"
+                  x2="78.7677"
+                  y2="53.9335"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="white" />
+                  <stop offset="1" stop-color="white" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <div class="process-step__body">
+              <span class="process-step__title">Tạo một tài khoản</span>
+              <p class="process-step__content">Trở thành member trên RecLand</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- end process working -->
+
+      <!-- sub banner  -->
+      <div class="sub-banner-wrap">
+        <div class="sub-banner__left">
+          <div class="job-heading__iconWrap">
+            <div class="job-heading__icon">
+              <img src="./assets/images/heartIcon.svg" alt="heart icon" />
+            </div>
+          </div>
+          <div class="sub-banner__content">
+            <h2 class="sub-banner__title">Bạn muốn đến với Recland</h2>
+            <p class="sub-banner__subTitle">
+              Chúng tôi sẽ giúp bạn thành công trên con đường Recer
+            </p>
+          </div>
+        </div>
+        <button class="btn btn--solid btn--signup">Đăng Ký Ngay</button>
+      </div>
+      <!-- end sub banner  -->
+    </div>
+    <!-- footer -->
+    <div class="footer">
+      <div class="wrapper">
+        <div class="footer-top">
+          <div class="footer-form__email">
+            <input type="text" placeholder="Enter your email address" />
+            <button class="btn--send">
+              <img src="./assets/images/send.svg" alt="send" />
+            </button>
+          </div>
+          <div class="footer-amount">
+            <div class="footer-amount__jobs">
+              <img src="./assets/images/199.svg" alt="" />
+              <span>Công việc</span>
+            </div>
+            <div class="footer-amount__company">
+              <img src="./assets/images/93.svg" alt="" />
+              <span>Công ty</span>
+            </div>
+          </div>
+        </div>
+        <div class="footer-aboutMe">
+          <div class="footer-col">
+            <div class="footer__link">
+              <img src="./assets/images/logo.png" alt="logo" />
+            </div>
+            <div class="footer-social">
+              <img src="./assets/images/Facebook.png" alt="" />
+              <img src="./assets/images/twitter.png" alt="" />
+              <img src="./assets/images/linkedin.png" alt="" />
+              <img src="./assets/images/instagram.png" alt="" />
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer__title">Địa chỉ</h4>
+            <p class="footer__infor">
+              Tòa nhà AC, 78 Duy Tân, Quận Cầu Giấy, Hà Nội
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer__title">Liên hệ</h4>
+            <div class="footer__infor">
+              <p>0369 713 819</p>
+              <p>luat.nguyen@recland.co</p>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer__title">Menu</h4>
+            <div class="footer__infor">
+              <p>Trang chủ</p>
+              <p>Tìm kiếm công việc</p>
+              <p>Sitemap</p>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer__title">Tài khoản của tôi</h4>
+            <div class="footer__infor">
+              <p>Tổng quan</p>
+              <p>Kho CV</p>
+              <p>Thông tin cá nhân</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>Copyright © 2022 Recland.co</span>
+        </div>
+      </div>
+    </div>
+    <!-- end footer -->
+  </body>
+</html>
